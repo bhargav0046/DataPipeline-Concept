@@ -56,9 +56,7 @@ def insert_data_into_db(data):
 
 
 if __name__ == "__main__":
-    # Assuming 'data' is fetched from fetch_data.py
     data = fetch_data_from_api()
-
     transformed_data = transform_data(data)
     print(transformed_data)
     insert_data_into_db(transformed_data)
